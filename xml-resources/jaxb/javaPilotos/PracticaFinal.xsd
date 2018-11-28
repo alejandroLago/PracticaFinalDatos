@@ -1,0 +1,23 @@
+﻿<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="pilotos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="piloto" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="nombre"/>
+              <xs:element type="xs:string" name="nacionalidad"/>
+              <xs:element type="xs:byte" name="edad"/>
+              <xs:element type="xs:byte" name="titulos"/>
+              <xs:element type="xs:short" name="carreras"/>
+              <xs:element type="xs:byte" name="puntosCarnet"/>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="escuderia" use="optional"/>
+            <xs:attribute type="xs:string" name="coche" use="optional"/>
+            <xs:attribute type="xs:byte" name="numero" use="optional"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

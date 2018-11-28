@@ -1,0 +1,28 @@
+﻿
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="1.0">           
+	<xsd:element name="pilotos">
+		<xsd:complexType>
+			<xsd:choice maxOccurs="unbounded">
+				<xsd:element name="piloto" minOccurs="0" maxOccurs="unbounded">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="nombre" type="xsd:string" />
+							<xsd:element name="nacionalidad" type="xsd:string" />						
+							<xsd:element name="edad" type="xsd:string" />
+							<xsd:element name="titulos" type="xsd:string" />
+							<xsd:element name="carreras" type="xsd:string" />
+							<xsd:element name="puntosCarnet" type="xsd:string" />
+						</xsd:sequence>
+						<xsd:attribute name="escuderia" type="xsd:string"/>
+						<xsd:attribute name="coche" type="xsd:string"/>
+						<xsd:attribute name="numero" type="xsd:string"/>
+						
+						
+						
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:choice>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>
