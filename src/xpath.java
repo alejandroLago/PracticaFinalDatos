@@ -20,9 +20,9 @@ import org.xml.sax.InputSource;
  * @author alexm
  */
 public class xpath {
-
-    public String consulta(File archivo, String codigo) {
-        String salida = "";
+String salida = "";
+    public int consulta(File archivo, String codigo) {
+        
         
         try {
             //Crea un objeto DocumentBuilderFactory para el DOM (JAXP)
@@ -42,17 +42,21 @@ public class xpath {
             if(codigo.equals("/pilotos/piloto")){
                 for(int i =0; i < nodeList.getLength(); i++){
                 salida = salida + "\n Escuderia: "+ nodeList.item(i).getAttributes().getNamedItem("escuderia").getNodeValue();
-                
-                        }
+                salida = salida + "\n Coche: "+ nodeList.item(i).getAttributes().getNamedItem("coche").getNodeValue();
+                salida = salida + "\n Numero: "+ nodeList.item(i).getAttributes().getNamedItem("numero").getNodeValue();
+                salida = salida + "\n" + nodeList.item(i).getTextContent();
+                }
+                        } else {
+                                for (int i = 0; i< nodeList.getLength(); i++){
+                                salida = salida + "\n" + nodeList.item(i).getTextContent();
+                                }
+                                
             }
-            
-            
-            
 
-            return salida;
+            return 1;
         } catch (Exception ex) {
             System.out.println("Error: " + ex.toString());
-            return "ERROR";
+            return 0;
         }
     }
 
