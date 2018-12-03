@@ -11,19 +11,19 @@
     <target name="jaxb-code-generation" depends="xjc-typedef-target,-do-init,-init-macrodef-javac">
         <mkdir dir="${build.generated.sources.dir}/jaxb" xmlns:s="http://xml.netbeans.org/schema/JAXBWizConfig"/>
         <mkdir dir="build/generated/jaxbCache" xmlns:s="http://xml.netbeans.org/schema/JAXBWizConfig"/>
-        <mkdir dir="build/generated/jaxbCache/javaPilotos"/>
-        <xjc package="javaPilotos" destdir="build/generated/jaxbCache/javaPilotos" catalog="catalog.xml">
+        <mkdir dir="build/generated/jaxbCache/practicaFinal"/>
+        <xjc destdir="build/generated/jaxbCache/practicaFinal" catalog="catalog.xml">
             <classpath>
                 <pathelement location="${src.dir}"/>
                 <pathelement path="${jaxbwiz.xjcrun.classpath}"/>
             </classpath>
             <arg value="-xmlschema"/>
-            <schema file="xml-resources/jaxb/javaPilotos/PracticaFinal.xsd"/>
-            <depends file="xml-resources/jaxb/javaPilotos/PracticaFinal.xsd"/>
-            <produces dir="build/generated/jaxbCache/javaPilotos"/>
+            <schema file="xml-resources/jaxb/practicaFinal/practicaFinal.xsd"/>
+            <depends file="xml-resources/jaxb/practicaFinal/practicaFinal.xsd"/>
+            <produces dir="build/generated/jaxbCache/practicaFinal"/>
         </xjc>
         <copy todir="${build.generated.sources.dir}/jaxb">
-            <fileset dir="build/generated/jaxbCache/javaPilotos"/>
+            <fileset dir="build/generated/jaxbCache/practicaFinal"/>
         </copy>
     </target>
 </project>

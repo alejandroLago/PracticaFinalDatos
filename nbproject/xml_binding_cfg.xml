@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='UTF-8' ?>
 <schemas xmlns='http://xml.netbeans.org/schema/JAXBWizConfig' destdir='build/generated-sources/jaxb' projectName='PracticaFinal' version='1.0'>
-	<schema type='-xmlschema' package='javaPilotos' name='javaPilotos'>
+	<schema type='-xmlschema' package='' name='practicaFinal'>
 		<xjc-options>
 		</xjc-options>
 		<schema-sources>
-			<schema-source location='xml-resources/jaxb/javaPilotos/PracticaFinal.xsd' origLocation='../../../AlejandroLago/PracticaFinal.xsd'/>
+			<schema-source location='xml-resources/jaxb/practicaFinal/practicaFinal.xsd' origLocation='C:\Users\xp\Desktop\practicaFinal.xsd'/>
 		</schema-sources>
 		<bindings>
 		</bindings>

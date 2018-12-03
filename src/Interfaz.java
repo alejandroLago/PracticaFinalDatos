@@ -16,6 +16,8 @@ public class Interfaz extends javax.swing.JFrame {
     File archivo;
     sax gesSax = new sax();
     xpath gesXpath = new xpath();
+    dom gesDom = new dom();
+    jaxb gesJaxb = new jaxb();
 
     /**
      * Creates new form Interfaz
@@ -35,136 +37,191 @@ public class Interfaz extends javax.swing.JFrame {
 
         jLabel8 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        jTextField4 = new javax.swing.JTextField();
-        jTextField5 = new javax.swing.JTextField();
-        jTextField6 = new javax.swing.JTextField();
-        jTextField7 = new javax.swing.JTextField();
-        jTextField8 = new javax.swing.JTextField();
-        jTextField9 = new javax.swing.JTextField();
-        jTextField10 = new javax.swing.JTextField();
-        jTextField11 = new javax.swing.JTextField();
-        jTextField12 = new javax.swing.JTextField();
-        jTextField13 = new javax.swing.JTextField();
-        jButton8 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
+        TextoPrincipal = new javax.swing.JTextArea();
+        AbrirArchivo = new javax.swing.JButton();
+        MostrarArchivo = new javax.swing.JButton();
+        TusConsultas = new javax.swing.JButton();
+        ListaConsultas = new javax.swing.JLabel();
+        consultaTodo = new javax.swing.JButton();
+        consultaPiloto = new javax.swing.JButton();
+        ConsultaEdad = new javax.swing.JButton();
+        ConsultaEscuderia = new javax.swing.JButton();
+        pilocoConsultar = new javax.swing.JTextField();
+        edadConsultar = new javax.swing.JTextField();
+        escuderiaCOnsultar = new javax.swing.JTextField();
+        Nombre = new javax.swing.JLabel();
+        Nacionalidad = new javax.swing.JLabel();
+        Edad = new javax.swing.JLabel();
+        Titulos = new javax.swing.JLabel();
+        Carreras = new javax.swing.JLabel();
+        PuntosCarnet = new javax.swing.JLabel();
+        Escuderia = new javax.swing.JLabel();
+        Coche = new javax.swing.JLabel();
+        Numero = new javax.swing.JLabel();
+        TextoConsulta = new javax.swing.JTextField();
+        TextoNombre = new javax.swing.JTextField();
+        TextoNacionalidad = new javax.swing.JTextField();
+        TextoEdad = new javax.swing.JTextField();
+        TextoTitulos = new javax.swing.JTextField();
+        TextoCarreras = new javax.swing.JTextField();
+        TextoCarnet = new javax.swing.JTextField();
+        TextoEscuderia = new javax.swing.JTextField();
+        TextoCoche = new javax.swing.JTextField();
+        TextoNumero = new javax.swing.JTextField();
+        AñadirNuevo = new javax.swing.JButton();
+        GuardarNuevo = new javax.swing.JButton();
+        Nombre2 = new javax.swing.JLabel();
+        Nacionalidad2 = new javax.swing.JLabel();
+        Edad2 = new javax.swing.JLabel();
+        Carreras2 = new javax.swing.JLabel();
+        Titulos2 = new javax.swing.JLabel();
+        Carnet2 = new javax.swing.JLabel();
+        Escuderia2 = new javax.swing.JLabel();
+        coche2 = new javax.swing.JLabel();
+        numero2 = new javax.swing.JLabel();
+        NombreBuscado = new javax.swing.JTextField();
+        NacionalidadBuscado = new javax.swing.JTextField();
+        EdadBuscado = new javax.swing.JTextField();
+        TitulosBuscado = new javax.swing.JTextField();
+        CarrerasBuscado = new javax.swing.JTextField();
+        CarnetBuscado = new javax.swing.JTextField();
+        EscuderiaBuscada = new javax.swing.JTextField();
+        CocheBuscado = new javax.swing.JTextField();
+        NumeroBuscado = new javax.swing.JTextField();
+        NumeroQueBuscar = new javax.swing.JTextField();
+        BuscarNumero = new javax.swing.JButton();
+        Modificar = new javax.swing.JButton();
 
         jLabel8.setText("jLabel8");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jScrollPane1.setViewportView(jTextArea1);
+        TextoPrincipal.setColumns(20);
+        TextoPrincipal.setRows(5);
+        jScrollPane1.setViewportView(TextoPrincipal);
 
-        jButton1.setText("Abrir");
-        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+        AbrirArchivo.setText("Abrir");
+        AbrirArchivo.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton1MouseClicked(evt);
+                AbrirArchivoMouseClicked(evt);
             }
         });
 
-        jButton2.setText("Mostrar");
-        jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
+        MostrarArchivo.setText("Mostrar");
+        MostrarArchivo.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton2MouseClicked(evt);
+                MostrarArchivoMouseClicked(evt);
             }
         });
 
-        jButton3.setText("Consultar");
-        jButton3.addMouseListener(new java.awt.event.MouseAdapter() {
+        TusConsultas.setText("Consultar");
+        TusConsultas.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton3MouseClicked(evt);
+                TusConsultasMouseClicked(evt);
             }
         });
 
-        jLabel1.setText("Consultas :");
+        ListaConsultas.setText("Consultas :");
 
-        jButton4.setText("Todo");
-        jButton4.addMouseListener(new java.awt.event.MouseAdapter() {
+        consultaTodo.setText("Todo");
+        consultaTodo.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton4MouseClicked(evt);
+                consultaTodoMouseClicked(evt);
             }
         });
 
-        jButton5.setText("Piloto");
-        jButton5.addMouseListener(new java.awt.event.MouseAdapter() {
+        consultaPiloto.setText("Piloto");
+        consultaPiloto.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton5MouseClicked(evt);
+                consultaPilotoMouseClicked(evt);
             }
         });
 
-        jButton6.setText("Mayores de:");
-        jButton6.addMouseListener(new java.awt.event.MouseAdapter() {
+        ConsultaEdad.setText("Mayores de:");
+        ConsultaEdad.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton6MouseClicked(evt);
+                ConsultaEdadMouseClicked(evt);
             }
         });
 
-        jButton7.setText("Pilotos por escuderia");
-        jButton7.addMouseListener(new java.awt.event.MouseAdapter() {
+        ConsultaEscuderia.setText("Pilotos por escuderia");
+        ConsultaEscuderia.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton7MouseClicked(evt);
+                ConsultaEscuderiaMouseClicked(evt);
             }
         });
 
-        jTextField1.setText("Nombre piloto:");
+        pilocoConsultar.setText("Nombre piloto:");
 
-        jTextField2.setText("Edad:");
+        edadConsultar.setText("Edad:");
 
-        jTextField3.setText("Escuderia:");
+        escuderiaCOnsultar.setText("Escuderia:");
 
-        jLabel2.setText("Nombre:");
+        Nombre.setText("Nombre:");
 
-        jLabel3.setText("Nacionalidad:");
+        Nacionalidad.setText("Nacionalidad:");
 
-        jLabel4.setText("Edad:");
+        Edad.setText("Edad:");
 
-        jLabel5.setText("Titulos");
+        Titulos.setText("Titulos");
 
-        jLabel6.setText("Carreras");
+        Carreras.setText("Carreras");
 
-        jLabel7.setText("PuntosCarnet");
+        PuntosCarnet.setText("PuntosCarnet");
 
-        jLabel9.setText("Escuderia");
+        Escuderia.setText("Escuderia");
 
-        jLabel10.setText("Coche");
+        Coche.setText("Coche");
 
-        jLabel11.setText("Numero");
+        Numero.setText("Numero");
 
-        jTextField4.setText("Consultas");
+        TextoConsulta.setText("Consultas");
 
-        jButton8.setText("Añadir");
-        jButton8.addMouseListener(new java.awt.event.MouseAdapter() {
+        AñadirNuevo.setText("Añadir");
+        AñadirNuevo.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton8MouseClicked(evt);
+                AñadirNuevoMouseClicked(evt);
             }
         });
 
-        jButton9.setText("Guardar");
-        jButton9.addMouseListener(new java.awt.event.MouseAdapter() {
+        GuardarNuevo.setText("Guardar");
+        GuardarNuevo.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton9MouseClicked(evt);
+                GuardarNuevoMouseClicked(evt);
+            }
+        });
+
+        Nombre2.setText("Nombre:");
+
+        Nacionalidad2.setText("Nacionalidad:");
+
+        Edad2.setText("Edad:");
+
+        Carreras2.setText("Carreras");
+
+        Titulos2.setText("Titulos");
+
+        Carnet2.setText("PuntosCarnet");
+
+        Escuderia2.setText("Escuderia");
+
+        coche2.setText("Coche");
+
+        numero2.setText("Numero");
+
+        NumeroQueBuscar.setText("Numero");
+
+        BuscarNumero.setText("Buscar");
+        BuscarNumero.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                BuscarNumeroMouseClicked(evt);
+            }
+        });
+
+        Modificar.setText("Modificar");
+        Modificar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ModificarMouseClicked(evt);
             }
         });
 
@@ -178,63 +235,96 @@ public class Interfaz extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jButton1)
+                                .addComponent(AbrirArchivo)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jButton2)
+                                .addComponent(MostrarArchivo)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                 .addGap(0, 0, Short.MAX_VALUE)
-                                .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(TextoConsulta, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(6, 6, 6)))
-                        .addComponent(jButton3)
+                        .addComponent(TusConsultas)
                         .addGap(4, 4, 4))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 287, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 287, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(8, 8, 8)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(Nacionalidad2, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(Nombre2, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(Edad2, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(Titulos2, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(Carreras2, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(Carnet2)
+                                    .addComponent(Escuderia2, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(coche2, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(numero2, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(28, 28, 28)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addComponent(TitulosBuscado)
+                                        .addComponent(CarrerasBuscado)
+                                        .addComponent(CarnetBuscado)
+                                        .addComponent(NombreBuscado, javax.swing.GroupLayout.DEFAULT_SIZE, 185, Short.MAX_VALUE)
+                                        .addComponent(NacionalidadBuscado)
+                                        .addComponent(EdadBuscado)
+                                        .addComponent(EscuderiaBuscada))
+                                    .addComponent(NumeroBuscado)
+                                    .addComponent(CocheBuscado))))
                         .addGap(57, 57, 57)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(ListaConsultas, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(edadConsultar, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGroup(layout.createSequentialGroup()
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(jButton8)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addComponent(jButton7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                            .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                            .addComponent(jButton6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                            .addGroup(layout.createSequentialGroup()
-                                                .addGap(29, 29, 29)
-                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addComponent(jLabel7)
-                                                    .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addComponent(ConsultaEscuderia, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(consultaPiloto, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(ConsultaEdad, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addGap(29, 29, 29)
+                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                                .addComponent(Nacionalidad, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(Nombre, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(Edad, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(Titulos, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(Carreras, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(PuntosCarnet)
+                                                .addComponent(Escuderia, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(Coche, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(Numero, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE))))
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addComponent(pilocoConsultar, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE))
                                         .addGroup(layout.createSequentialGroup()
                                             .addGap(29, 29, 29)
-                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addComponent(jButton9)
-                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                                    .addComponent(jTextField3, javax.swing.GroupLayout.DEFAULT_SIZE, 115, Short.MAX_VALUE)
-                                                    .addComponent(jTextField5)
-                                                    .addComponent(jTextField6)
-                                                    .addComponent(jTextField7)
-                                                    .addComponent(jTextField8)
-                                                    .addComponent(jTextField9)
-                                                    .addComponent(jTextField10)
-                                                    .addComponent(jTextField11)
-                                                    .addComponent(jTextField12)
-                                                    .addComponent(jTextField13)))))))
-                            .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap(47, Short.MAX_VALUE))))
+                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                                .addComponent(escuderiaCOnsultar, javax.swing.GroupLayout.DEFAULT_SIZE, 115, Short.MAX_VALUE)
+                                                .addComponent(TextoNombre)
+                                                .addComponent(TextoNacionalidad)
+                                                .addComponent(TextoEdad)
+                                                .addComponent(TextoTitulos)
+                                                .addComponent(TextoCarreras)
+                                                .addComponent(TextoCarnet)
+                                                .addComponent(TextoEscuderia)
+                                                .addComponent(TextoCoche)
+                                                .addComponent(TextoNumero))))))
+                            .addComponent(consultaTodo, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(47, 47, 47))))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(27, 27, 27)
+                .addComponent(NumeroQueBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(BuscarNumero)
+                .addGap(18, 18, 18)
+                .addComponent(Modificar)
+                .addGap(114, 114, 114)
+                .addComponent(AñadirNuevo)
+                .addGap(40, 40, 40)
+                .addComponent(GuardarNuevo)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -242,126 +332,236 @@ public class Interfaz extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButton1)
-                            .addComponent(jButton2))
+                            .addComponent(AbrirArchivo)
+                            .addComponent(MostrarArchivo))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(90, 90, 90)
-                        .addComponent(jLabel1)
+                        .addComponent(ListaConsultas)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton4)
+                        .addComponent(consultaTodo)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButton5)
-                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(consultaPiloto)
+                            .addComponent(pilocoConsultar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButton6)
-                            .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(ConsultaEdad)
+                            .addComponent(edadConsultar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButton7)
-                            .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(ConsultaEscuderia)
+                            .addComponent(escuderiaCOnsultar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(34, 34, 34)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButton3)
-                            .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(TusConsultas)
+                            .addComponent(TextoConsulta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Nombre, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(TextoNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Nacionalidad)
+                            .addComponent(TextoNacionalidad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Edad, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(TextoEdad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Titulos, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(TextoTitulos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Carreras, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(TextoCarreras, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(PuntosCarnet)
+                            .addComponent(TextoCarnet, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Escuderia, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(TextoEscuderia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Nombre2, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(NombreBuscado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Nacionalidad2)
+                            .addComponent(NacionalidadBuscado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Edad2, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(EdadBuscado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Titulos2, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(TitulosBuscado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Carreras2, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(CarrerasBuscado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Carnet2)
+                            .addComponent(CarnetBuscado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Escuderia2, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(EscuderiaBuscada, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(coche2, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(CocheBuscado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Coche, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(TextoCoche, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(numero2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(NumeroBuscado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Numero, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(TextoNumero, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel7)
-                    .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jTextField13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton8)
-                    .addComponent(jButton9))
-                .addGap(7, 7, 7))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(Modificar, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(AñadirNuevo)
+                        .addComponent(GuardarNuevo))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(NumeroQueBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(BuscarNumero)))
+                .addGap(91, 91, 91))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
+    private void AbrirArchivoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AbrirArchivoMouseClicked
       JFileChooser fileChooser = new JFileChooser();        
         fileChooser.setCurrentDirectory(new File(System.getProperty("user.home"))); 
         int result = fileChooser.showOpenDialog(this);
         if (result == JFileChooser.APPROVE_OPTION) {
         archivo = fileChooser.getSelectedFile();
         }
-    }//GEN-LAST:event_jButton1MouseClicked
+    }//GEN-LAST:event_AbrirArchivoMouseClicked
 
-    private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
+    
+    private File guardar(){
+        try{
+            JFileChooser fileChooser = new JFileChooser();
+            File ruta=null;
+            fileChooser.setMultiSelectionEnabled(false);
+            fileChooser.setDialogType(JFileChooser.SAVE_DIALOG);
+            int guardar = fileChooser.showSaveDialog(this);
+            if(guardar == JFileChooser.APPROVE_OPTION)
+                ruta = fileChooser.getSelectedFile();
+                gesJaxb.guardar_XML_JAXB(ruta);
+               
+        }
+        catch (Exception ex){
+            System.out.println("No se puede acceder al fichero");
+        }
+        return archivo;
+    }
+    
+    
+    
+    
+    
+    
+    private void MostrarArchivoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MostrarArchivoMouseClicked
        gesSax.abrir_XML_SAX(archivo);
-        jTextArea1.setText(gesSax.recorrerSAX());
-    }//GEN-LAST:event_jButton2MouseClicked
+        TextoPrincipal.setText(gesSax.recorrerSAX());
+    }//GEN-LAST:event_MostrarArchivoMouseClicked
 
-    private void jButton4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton4MouseClicked
+    private void consultaTodoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_consultaTodoMouseClicked
         gesXpath.consulta(archivo, "/pilotos/piloto");
-        jTextArea1.setText(gesXpath.salida);
-    }//GEN-LAST:event_jButton4MouseClicked
+        TextoPrincipal.setText(gesXpath.salida);
+    }//GEN-LAST:event_consultaTodoMouseClicked
 
-    private void jButton5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton5MouseClicked
-       gesXpath.consulta(archivo, "/pilotos/piloto"+"[./nombre="+"'"+jTextField1.getText()+"'"+"]");
-       jTextArea1.setText(gesXpath.salida);
-    }//GEN-LAST:event_jButton5MouseClicked
+    private void consultaPilotoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_consultaPilotoMouseClicked
+       gesXpath.consulta(archivo, "/pilotos/piloto"+"[./nombre="+"'"+pilocoConsultar.getText()+"'"+"]");
+       TextoPrincipal.setText(gesXpath.salida);
+    }//GEN-LAST:event_consultaPilotoMouseClicked
 
-    private void jButton6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton6MouseClicked
-       gesXpath.consulta(archivo, "/pilotos/piloto"+"[./edad>"+jTextField2.getText() +"]");
-       jTextArea1.setText(gesXpath.salida);
-    }//GEN-LAST:event_jButton6MouseClicked
+    private void ConsultaEdadMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ConsultaEdadMouseClicked
+       gesXpath.consulta(archivo, "/pilotos/piloto"+"[./edad>"+edadConsultar.getText() +"]");
+       TextoPrincipal.setText(gesXpath.salida);
+    }//GEN-LAST:event_ConsultaEdadMouseClicked
 ///pilotos/piloto[./@escuderia='Ferrari']
-    private void jButton7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton7MouseClicked
-        gesXpath.consulta(archivo, "/pilotos/piloto"+"[./@escuderia="+"'"+jTextField3.getText()+"'"+"]");
-       jTextArea1.setText(gesXpath.salida);
-    }//GEN-LAST:event_jButton7MouseClicked
+    private void ConsultaEscuderiaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ConsultaEscuderiaMouseClicked
+        gesXpath.consulta(archivo, "/pilotos/piloto"+"[./@escuderia="+"'"+escuderiaCOnsultar.getText()+"'"+"]");
+       TextoPrincipal.setText(gesXpath.salida);
+    }//GEN-LAST:event_ConsultaEscuderiaMouseClicked
 
-    private void jButton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseClicked
+    private void TusConsultasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TusConsultasMouseClicked
 
-        gesXpath.consulta(archivo, jTextField4.getText());
-        jTextArea1.setText(gesXpath.salida);
+        gesXpath.consulta(archivo, TextoConsulta.getText());
+        TextoPrincipal.setText(gesXpath.salida);
 
-    }//GEN-LAST:event_jButton3MouseClicked
+    }//GEN-LAST:event_TusConsultasMouseClicked
 
-    private void jButton8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton8MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton8MouseClicked
+    private void AñadirNuevoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AñadirNuevoMouseClicked
+        gesDom.abrir_XML_DOM(archivo);
+        gesDom.annadirDOM(archivo,TextoNombre.getText(), TextoNacionalidad.getText(), TextoEdad.getText(), TextoTitulos.getText(), TextoCarreras.getText(), TextoCarnet.getText(), TextoEscuderia.getText(), TextoCoche.getText(), TextoNumero.getText());
+        
+        
+    }//GEN-LAST:event_AñadirNuevoMouseClicked
 
-    private void jButton9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton9MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton9MouseClicked
+    private void GuardarNuevoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_GuardarNuevoMouseClicked
+        guardar();
+    }//GEN-LAST:event_GuardarNuevoMouseClicked
+
+    private void BuscarNumeroMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BuscarNumeroMouseClicked
+      gesJaxb.abrir_XML_JAXB(archivo);
+        gesJaxb.recorrerJAXByMostrar();
+        String buscar = NumeroQueBuscar.getText();
+        for(int i = 0; i<gesJaxb.pilotos.size(); i++){
+            if(gesJaxb.pilotos.get(i).getNumero().equals(buscar)){
+                NombreBuscado.setText(gesJaxb.pilotos.get(i).getNombre());
+                NacionalidadBuscado.setText(gesJaxb.pilotos.get(i).getNacionalidad());
+                EdadBuscado.setText(gesJaxb.pilotos.get(i).getEdad());
+                TitulosBuscado.setText(gesJaxb.pilotos.get(i).getTitulos());
+                CarrerasBuscado.setText(gesJaxb.pilotos.get(i).getCarreras());
+                CarnetBuscado.setText(gesJaxb.pilotos.get(i).getPuntosCarnet());
+                EscuderiaBuscada.setText(gesJaxb.pilotos.get(i).getEscuderia());
+                CocheBuscado.setText(gesJaxb.pilotos.get(i).getCoche());
+                NumeroBuscado.setText(gesJaxb.pilotos.get(i).getNumero());
+                
+            }
+            
+        }
+        
+        
+        
+        
+    }//GEN-LAST:event_BuscarNumeroMouseClicked
+
+    private void ModificarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ModificarMouseClicked
+         String buscar = NumeroQueBuscar.getText();
+        for(int i = 0; i<gesJaxb.pilotos.size(); i++){
+            if(gesJaxb.pilotos.get(i).getNumero().equals(buscar)){
+                gesJaxb.pilotos.get(i).setNombre(NombreBuscado.getText());
+                gesJaxb.pilotos.get(i).setNacionalidad(NacionalidadBuscado.getText());
+                gesJaxb.pilotos.get(i).setEdad(EdadBuscado.getText());
+                gesJaxb.pilotos.get(i).setTitulos(TitulosBuscado.getText());
+                gesJaxb.pilotos.get(i).setCarreras(CarrerasBuscado.getText());
+                gesJaxb.pilotos.get(i).setPuntosCarnet(CarnetBuscado.getText());
+                gesJaxb.pilotos.get(i).setEscuderia(EscuderiaBuscada.getText());
+                gesJaxb.pilotos.get(i).setCoche(CocheBuscado.getText());
+                gesJaxb.pilotos.get(i).setNumero(NumeroBuscado.getText());
+       
+            }
+            
+        }
+        gesJaxb.guardar_XML_JAXB(archivo);
+    }//GEN-LAST:event_ModificarMouseClicked
 
     /**
      * @param args the command line arguments
@@ -399,40 +599,61 @@ public class Interfaz extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
+    private javax.swing.JButton AbrirArchivo;
+    private javax.swing.JButton AñadirNuevo;
+    private javax.swing.JButton BuscarNumero;
+    private javax.swing.JLabel Carnet2;
+    private javax.swing.JTextField CarnetBuscado;
+    private javax.swing.JLabel Carreras;
+    private javax.swing.JLabel Carreras2;
+    private javax.swing.JTextField CarrerasBuscado;
+    private javax.swing.JLabel Coche;
+    private javax.swing.JTextField CocheBuscado;
+    private javax.swing.JButton ConsultaEdad;
+    private javax.swing.JButton ConsultaEscuderia;
+    private javax.swing.JLabel Edad;
+    private javax.swing.JLabel Edad2;
+    private javax.swing.JTextField EdadBuscado;
+    private javax.swing.JLabel Escuderia;
+    private javax.swing.JLabel Escuderia2;
+    private javax.swing.JTextField EscuderiaBuscada;
+    private javax.swing.JButton GuardarNuevo;
+    private javax.swing.JLabel ListaConsultas;
+    private javax.swing.JButton Modificar;
+    private javax.swing.JButton MostrarArchivo;
+    private javax.swing.JLabel Nacionalidad;
+    private javax.swing.JLabel Nacionalidad2;
+    private javax.swing.JTextField NacionalidadBuscado;
+    private javax.swing.JLabel Nombre;
+    private javax.swing.JLabel Nombre2;
+    private javax.swing.JTextField NombreBuscado;
+    private javax.swing.JLabel Numero;
+    private javax.swing.JTextField NumeroBuscado;
+    private javax.swing.JTextField NumeroQueBuscar;
+    private javax.swing.JLabel PuntosCarnet;
+    private javax.swing.JTextField TextoCarnet;
+    private javax.swing.JTextField TextoCarreras;
+    private javax.swing.JTextField TextoCoche;
+    private javax.swing.JTextField TextoConsulta;
+    private javax.swing.JTextField TextoEdad;
+    private javax.swing.JTextField TextoEscuderia;
+    private javax.swing.JTextField TextoNacionalidad;
+    private javax.swing.JTextField TextoNombre;
+    private javax.swing.JTextField TextoNumero;
+    private javax.swing.JTextArea TextoPrincipal;
+    private javax.swing.JTextField TextoTitulos;
+    private javax.swing.JLabel Titulos;
+    private javax.swing.JLabel Titulos2;
+    private javax.swing.JTextField TitulosBuscado;
+    private javax.swing.JButton TusConsultas;
+    private javax.swing.JLabel coche2;
+    private javax.swing.JButton consultaPiloto;
+    private javax.swing.JButton consultaTodo;
+    private javax.swing.JTextField edadConsultar;
+    private javax.swing.JTextField escuderiaCOnsultar;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextArea jTextArea1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField10;
-    private javax.swing.JTextField jTextField11;
-    private javax.swing.JTextField jTextField12;
-    private javax.swing.JTextField jTextField13;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
-    private javax.swing.JTextField jTextField8;
-    private javax.swing.JTextField jTextField9;
+    private javax.swing.JLabel numero2;
+    private javax.swing.JTextField pilocoConsultar;
     // End of variables declaration//GEN-END:variables
 }

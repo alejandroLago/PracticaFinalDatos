@@ -36,81 +36,118 @@
                   <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
-                              <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                              <Component id="AbrirArchivo" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="jButton2" min="-2" max="-2" attributes="0"/>
+                              <Component id="MostrarArchivo" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
                               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                              <Component id="jTextField4" min="-2" pref="144" max="-2" attributes="0"/>
+                              <Component id="TextoConsulta" min="-2" pref="144" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <Component id="jButton3" min="-2" max="-2" attributes="0"/>
+                      <Component id="TusConsultas" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="jScrollPane1" min="-2" pref="287" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jScrollPane1" min="-2" pref="287" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Component id="Nacionalidad2" alignment="1" min="-2" pref="66" max="-2" attributes="0"/>
+                                  <Component id="Nombre2" alignment="1" min="-2" pref="66" max="-2" attributes="0"/>
+                                  <Component id="Edad2" alignment="1" min="-2" pref="66" max="-2" attributes="0"/>
+                                  <Component id="Titulos2" alignment="1" min="-2" pref="66" max="-2" attributes="0"/>
+                                  <Component id="Carreras2" alignment="1" min="-2" pref="66" max="-2" attributes="0"/>
+                                  <Component id="Carnet2" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="Escuderia2" alignment="1" min="-2" pref="66" max="-2" attributes="0"/>
+                                  <Component id="coche2" alignment="1" min="-2" pref="66" max="-2" attributes="0"/>
+                                  <Component id="numero2" alignment="1" min="-2" pref="66" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="TitulosBuscado" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="CarrerasBuscado" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="CarnetBuscado" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="NombreBuscado" pref="185" max="32767" attributes="0"/>
+                                      <Component id="NacionalidadBuscado" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="EdadBuscado" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="EscuderiaBuscada" alignment="0" max="32767" attributes="0"/>
+                                  </Group>
+                                  <Component id="NumeroBuscado" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="CocheBuscado" alignment="0" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
                       <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jLabel1" min="-2" pref="64" max="-2" attributes="0"/>
+                          <Component id="ListaConsultas" min="-2" pref="64" max="-2" attributes="0"/>
                           <Group type="103" alignment="0" groupAlignment="1" attributes="0">
-                              <Component id="jTextField2" min="-2" pref="115" max="-2" attributes="0"/>
+                              <Component id="edadConsultar" min="-2" pref="115" max="-2" attributes="0"/>
                               <Group type="102" alignment="1" attributes="0">
-                                  <Group type="103" groupAlignment="1" attributes="0">
-                                      <Component id="jButton8" min="-2" max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                          <Component id="jButton7" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="jButton5" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="jButton6" alignment="0" max="32767" attributes="0"/>
-                                          <Group type="102" alignment="0" attributes="0">
-                                              <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
-                                              <Group type="103" groupAlignment="1" attributes="0">
-                                                  <Component id="jLabel3" min="-2" pref="66" max="-2" attributes="0"/>
-                                                  <Component id="jLabel2" min="-2" pref="66" max="-2" attributes="0"/>
-                                                  <Component id="jLabel4" alignment="1" min="-2" pref="66" max="-2" attributes="0"/>
-                                                  <Component id="jLabel5" alignment="1" min="-2" pref="66" max="-2" attributes="0"/>
-                                                  <Component id="jLabel6" alignment="1" min="-2" pref="66" max="-2" attributes="0"/>
-                                                  <Component id="jLabel7" alignment="1" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="jLabel9" alignment="1" min="-2" pref="66" max="-2" attributes="0"/>
-                                                  <Component id="jLabel10" alignment="1" min="-2" pref="66" max="-2" attributes="0"/>
-                                                  <Component id="jLabel11" alignment="1" min="-2" pref="66" max="-2" attributes="0"/>
-                                              </Group>
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="ConsultaEscuderia" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="consultaPiloto" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="ConsultaEdad" alignment="0" max="32767" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="1" attributes="0">
+                                              <Component id="Nacionalidad" min="-2" pref="66" max="-2" attributes="0"/>
+                                              <Component id="Nombre" min="-2" pref="66" max="-2" attributes="0"/>
+                                              <Component id="Edad" alignment="1" min="-2" pref="66" max="-2" attributes="0"/>
+                                              <Component id="Titulos" alignment="1" min="-2" pref="66" max="-2" attributes="0"/>
+                                              <Component id="Carreras" alignment="1" min="-2" pref="66" max="-2" attributes="0"/>
+                                              <Component id="PuntosCarnet" alignment="1" min="-2" max="-2" attributes="0"/>
+                                              <Component id="Escuderia" alignment="1" min="-2" pref="66" max="-2" attributes="0"/>
+                                              <Component id="Coche" alignment="1" min="-2" pref="66" max="-2" attributes="0"/>
+                                              <Component id="Numero" alignment="1" min="-2" pref="66" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
                                   </Group>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" alignment="1" attributes="0">
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="jTextField1" min="-2" pref="115" max="-2" attributes="0"/>
+                                          <Component id="pilocoConsultar" min="-2" pref="115" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" alignment="0" attributes="0">
                                           <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="jButton9" min="-2" max="-2" attributes="0"/>
-                                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                                  <Component id="jTextField3" pref="115" max="32767" attributes="0"/>
-                                                  <Component id="jTextField5" max="32767" attributes="0"/>
-                                                  <Component id="jTextField6" max="32767" attributes="0"/>
-                                                  <Component id="jTextField7" max="32767" attributes="0"/>
-                                                  <Component id="jTextField8" max="32767" attributes="0"/>
-                                                  <Component id="jTextField9" max="32767" attributes="0"/>
-                                                  <Component id="jTextField10" max="32767" attributes="0"/>
-                                                  <Component id="jTextField11" max="32767" attributes="0"/>
-                                                  <Component id="jTextField12" max="32767" attributes="0"/>
-                                                  <Component id="jTextField13" max="32767" attributes="0"/>
-                                              </Group>
+                                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                              <Component id="escuderiaCOnsultar" pref="115" max="32767" attributes="0"/>
+                                              <Component id="TextoNombre" max="32767" attributes="0"/>
+                                              <Component id="TextoNacionalidad" max="32767" attributes="0"/>
+                                              <Component id="TextoEdad" max="32767" attributes="0"/>
+                                              <Component id="TextoTitulos" max="32767" attributes="0"/>
+                                              <Component id="TextoCarreras" max="32767" attributes="0"/>
+                                              <Component id="TextoCarnet" max="32767" attributes="0"/>
+                                              <Component id="TextoEscuderia" max="32767" attributes="0"/>
+                                              <Component id="TextoCoche" max="32767" attributes="0"/>
+                                              <Component id="TextoNumero" max="32767" attributes="0"/>
                                           </Group>
                                       </Group>
                                   </Group>
                               </Group>
                           </Group>
-                          <Component id="jButton4" alignment="0" min="-2" pref="131" max="-2" attributes="0"/>
+                          <Component id="consultaTodo" alignment="0" min="-2" pref="131" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="47" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
                   </Group>
               </Group>
+          </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+              <Component id="NumeroQueBuscar" min="-2" pref="84" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="BuscarNumero" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="Modificar" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="114" max="-2" attributes="0"/>
+              <Component id="AñadirNuevo" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+              <Component id="GuardarNuevo" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -120,92 +157,142 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jButton1" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jButton2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="AbrirArchivo" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="MostrarArchivo" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jScrollPane1" min="-2" pref="216" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="90" max="-2" attributes="0"/>
-                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                      <Component id="ListaConsultas" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="jButton4" min="-2" max="-2" attributes="0"/>
+                      <Component id="consultaTodo" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jButton5" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="consultaPiloto" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="pilocoConsultar" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jButton6" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="ConsultaEdad" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="edadConsultar" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jButton7" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField3" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="ConsultaEscuderia" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="escuderiaCOnsultar" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jButton3" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField4" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="TusConsultas" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="TextoConsulta" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="Nombre" alignment="3" min="-2" pref="14" max="-2" attributes="0"/>
+                          <Component id="TextoNombre" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="Nacionalidad" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="TextoNacionalidad" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="Edad" alignment="3" min="-2" pref="14" max="-2" attributes="0"/>
+                          <Component id="TextoEdad" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="Titulos" alignment="3" min="-2" pref="14" max="-2" attributes="0"/>
+                          <Component id="TextoTitulos" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="Carreras" alignment="3" min="-2" pref="14" max="-2" attributes="0"/>
+                          <Component id="TextoCarreras" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="PuntosCarnet" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="TextoCarnet" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="Escuderia" alignment="3" min="-2" pref="14" max="-2" attributes="0"/>
+                          <Component id="TextoEscuderia" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="Nombre2" alignment="3" min="-2" pref="14" max="-2" attributes="0"/>
+                          <Component id="NombreBuscado" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="Nacionalidad2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="NacionalidadBuscado" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="Edad2" alignment="3" min="-2" pref="14" max="-2" attributes="0"/>
+                          <Component id="EdadBuscado" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="Titulos2" alignment="3" min="-2" pref="14" max="-2" attributes="0"/>
+                          <Component id="TitulosBuscado" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="Carreras2" alignment="3" min="-2" pref="14" max="-2" attributes="0"/>
+                          <Component id="CarrerasBuscado" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="Carnet2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="CarnetBuscado" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="Escuderia2" alignment="3" min="-2" pref="14" max="-2" attributes="0"/>
+                          <Component id="EscuderiaBuscada" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="coche2" alignment="3" min="-2" pref="14" max="-2" attributes="0"/>
+                          <Component id="CocheBuscado" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="Coche" alignment="3" min="-2" pref="14" max="-2" attributes="0"/>
+                          <Component id="TextoCoche" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="numero2" alignment="3" max="32767" attributes="0"/>
+                          <Component id="NumeroBuscado" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="Numero" alignment="3" max="32767" attributes="0"/>
+                          <Component id="TextoNumero" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel2" alignment="3" min="-2" pref="14" max="-2" attributes="0"/>
-                  <Component id="jTextField5" alignment="3" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="103" alignment="1" groupAlignment="3" attributes="0">
+                      <Component id="Modificar" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
+                      <Component id="AñadirNuevo" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="GuardarNuevo" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="NumeroQueBuscar" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="BuscarNumero" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
               </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTextField6" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel4" alignment="3" min="-2" pref="14" max="-2" attributes="0"/>
-                  <Component id="jTextField7" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel5" alignment="3" min="-2" pref="14" max="-2" attributes="0"/>
-                  <Component id="jTextField8" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel6" alignment="3" min="-2" pref="14" max="-2" attributes="0"/>
-                  <Component id="jTextField9" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTextField10" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel9" alignment="3" min="-2" pref="14" max="-2" attributes="0"/>
-                  <Component id="jTextField11" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel10" alignment="3" min="-2" pref="14" max="-2" attributes="0"/>
-                  <Component id="jTextField12" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel11" alignment="3" max="32767" attributes="0"/>
-                  <Component id="jTextField13" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jButton8" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton9" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="91" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -218,7 +305,7 @@
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
       <SubComponents>
-        <Component class="javax.swing.JTextArea" name="jTextArea1">
+        <Component class="javax.swing.JTextArea" name="TextoPrincipal">
           <Properties>
             <Property name="columns" type="int" value="20"/>
             <Property name="rows" type="int" value="5"/>
@@ -226,164 +313,248 @@
         </Component>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JButton" name="jButton1">
+    <Component class="javax.swing.JButton" name="AbrirArchivo">
       <Properties>
         <Property name="text" type="java.lang.String" value="Abrir"/>
       </Properties>
       <Events>
-        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButton1MouseClicked"/>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="AbrirArchivoMouseClicked"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton2">
+    <Component class="javax.swing.JButton" name="MostrarArchivo">
       <Properties>
         <Property name="text" type="java.lang.String" value="Mostrar"/>
       </Properties>
       <Events>
-        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButton2MouseClicked"/>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="MostrarArchivoMouseClicked"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton3">
+    <Component class="javax.swing.JButton" name="TusConsultas">
       <Properties>
         <Property name="text" type="java.lang.String" value="Consultar"/>
       </Properties>
       <Events>
-        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButton3MouseClicked"/>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="TusConsultasMouseClicked"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel1">
+    <Component class="javax.swing.JLabel" name="ListaConsultas">
       <Properties>
         <Property name="text" type="java.lang.String" value="Consultas :"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton4">
+    <Component class="javax.swing.JButton" name="consultaTodo">
       <Properties>
         <Property name="text" type="java.lang.String" value="Todo"/>
       </Properties>
       <Events>
-        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButton4MouseClicked"/>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="consultaTodoMouseClicked"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton5">
+    <Component class="javax.swing.JButton" name="consultaPiloto">
       <Properties>
         <Property name="text" type="java.lang.String" value="Piloto"/>
       </Properties>
       <Events>
-        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButton5MouseClicked"/>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="consultaPilotoMouseClicked"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton6">
+    <Component class="javax.swing.JButton" name="ConsultaEdad">
       <Properties>
         <Property name="text" type="java.lang.String" value="Mayores de:"/>
       </Properties>
       <Events>
-        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButton6MouseClicked"/>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="ConsultaEdadMouseClicked"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton7">
+    <Component class="javax.swing.JButton" name="ConsultaEscuderia">
       <Properties>
         <Property name="text" type="java.lang.String" value="Pilotos por escuderia"/>
       </Properties>
       <Events>
-        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButton7MouseClicked"/>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="ConsultaEscuderiaMouseClicked"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField1">
+    <Component class="javax.swing.JTextField" name="pilocoConsultar">
       <Properties>
         <Property name="text" type="java.lang.String" value="Nombre piloto:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField2">
+    <Component class="javax.swing.JTextField" name="edadConsultar">
       <Properties>
         <Property name="text" type="java.lang.String" value="Edad:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField3">
+    <Component class="javax.swing.JTextField" name="escuderiaCOnsultar">
       <Properties>
         <Property name="text" type="java.lang.String" value="Escuderia:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel2">
+    <Component class="javax.swing.JLabel" name="Nombre">
       <Properties>
         <Property name="text" type="java.lang.String" value="Nombre:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel3">
+    <Component class="javax.swing.JLabel" name="Nacionalidad">
       <Properties>
         <Property name="text" type="java.lang.String" value="Nacionalidad:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel4">
+    <Component class="javax.swing.JLabel" name="Edad">
       <Properties>
         <Property name="text" type="java.lang.String" value="Edad:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel5">
+    <Component class="javax.swing.JLabel" name="Titulos">
       <Properties>
         <Property name="text" type="java.lang.String" value="Titulos"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel6">
+    <Component class="javax.swing.JLabel" name="Carreras">
       <Properties>
         <Property name="text" type="java.lang.String" value="Carreras"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel7">
+    <Component class="javax.swing.JLabel" name="PuntosCarnet">
       <Properties>
         <Property name="text" type="java.lang.String" value="PuntosCarnet"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel9">
+    <Component class="javax.swing.JLabel" name="Escuderia">
       <Properties>
         <Property name="text" type="java.lang.String" value="Escuderia"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel10">
+    <Component class="javax.swing.JLabel" name="Coche">
       <Properties>
         <Property name="text" type="java.lang.String" value="Coche"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel11">
+    <Component class="javax.swing.JLabel" name="Numero">
       <Properties>
         <Property name="text" type="java.lang.String" value="Numero"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField4">
+    <Component class="javax.swing.JTextField" name="TextoConsulta">
       <Properties>
         <Property name="text" type="java.lang.String" value="Consultas"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField5">
+    <Component class="javax.swing.JTextField" name="TextoNombre">
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField6">
+    <Component class="javax.swing.JTextField" name="TextoNacionalidad">
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField7">
+    <Component class="javax.swing.JTextField" name="TextoEdad">
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField8">
+    <Component class="javax.swing.JTextField" name="TextoTitulos">
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField9">
+    <Component class="javax.swing.JTextField" name="TextoCarreras">
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField10">
+    <Component class="javax.swing.JTextField" name="TextoCarnet">
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField11">
+    <Component class="javax.swing.JTextField" name="TextoEscuderia">
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField12">
+    <Component class="javax.swing.JTextField" name="TextoCoche">
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField13">
+    <Component class="javax.swing.JTextField" name="TextoNumero">
     </Component>
-    <Component class="javax.swing.JButton" name="jButton8">
+    <Component class="javax.swing.JButton" name="A&#xf1;adirNuevo">
       <Properties>
         <Property name="text" type="java.lang.String" value="A&#xf1;adir"/>
       </Properties>
       <Events>
-        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButton8MouseClicked"/>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="A&#xf1;adirNuevoMouseClicked"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton9">
+    <Component class="javax.swing.JButton" name="GuardarNuevo">
       <Properties>
         <Property name="text" type="java.lang.String" value="Guardar"/>
       </Properties>
       <Events>
-        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButton9MouseClicked"/>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="GuardarNuevoMouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Nombre2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Nombre:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Nacionalidad2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Nacionalidad:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Edad2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Edad:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Carreras2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Carreras"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Titulos2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Titulos"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Carnet2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="PuntosCarnet"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Escuderia2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Escuderia"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="coche2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Coche"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="numero2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Numero"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="NombreBuscado">
+    </Component>
+    <Component class="javax.swing.JTextField" name="NacionalidadBuscado">
+    </Component>
+    <Component class="javax.swing.JTextField" name="EdadBuscado">
+    </Component>
+    <Component class="javax.swing.JTextField" name="TitulosBuscado">
+    </Component>
+    <Component class="javax.swing.JTextField" name="CarrerasBuscado">
+    </Component>
+    <Component class="javax.swing.JTextField" name="CarnetBuscado">
+    </Component>
+    <Component class="javax.swing.JTextField" name="EscuderiaBuscada">
+    </Component>
+    <Component class="javax.swing.JTextField" name="CocheBuscado">
+    </Component>
+    <Component class="javax.swing.JTextField" name="NumeroBuscado">
+    </Component>
+    <Component class="javax.swing.JTextField" name="NumeroQueBuscar">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Numero"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="BuscarNumero">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Buscar"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="BuscarNumeroMouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="Modificar">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Modificar"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="ModificarMouseClicked"/>
       </Events>
     </Component>
   </SubComponents>

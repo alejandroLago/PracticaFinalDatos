@@ -119,7 +119,7 @@ return -1;
 
     }
 
-    public int annadirDOM(String nombre, String nacionalidad,String edad,String titulos,String carreras,String puntosCarnet ,String escuderia,String coche,String numero) {
+    public int annadirDOM(File archivo,String nombre, String nacionalidad,String edad,String titulos,String carreras,String puntosCarnet ,String escuderia,String coche,String numero) {
         try {
             // se crea un nodo tipo Element con nombre 'nombre'(<nombre>)
             Node nNombre = doc.createElement("nombre");
@@ -180,6 +180,18 @@ return -1;
             //hijo el nodo libro que ya tiene colgando todos sus hijos y atributos creados antes.
             Node raiz = doc.getChildNodes().item(0);
             raiz.appendChild(nPiloto);
+            
+            
+              File archivo_xml = archivo;
+//Especifica el formato de salida
+OutputFormat format = new OutputFormat(doc);
+//Especifica que la salida esté indentada.
+format.setIndenting(true);
+//Escribe el contenido en el FILE
+XMLSerializer serializer = new XMLSerializer(new
+FileOutputStream(archivo_xml) , format);
+serializer.serialize(doc);
+            
 
             return 0;
         } catch (Exception e) {
